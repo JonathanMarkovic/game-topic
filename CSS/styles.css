@@ -30,7 +30,7 @@ nav h1 {
     font-size: larger;
     color: #ffd2d7;
 }
-
+/* 
 #contactForm {
     color: white;
     display: flexbox;
@@ -47,3 +47,18 @@ nav h1 {
     justify-items: center;
 }
 
+#signUpForm {
+    color: white;
+    display: flexbox;
+    background-color: #88304E;
+    align-content: center;
+    justify-items: center;
+} */
+
+form {
+    color: white;
+    display: flexbox;
+    background-color: #88304E;
+    align-content: center;
+    justify-items: center;
+}
