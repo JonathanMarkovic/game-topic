@@ -38,3 +38,12 @@ nav h1 {
     align-content: center;
     justify-items: center;
 }
+
+#signUpForm {
+    color: white;
+    display: flexbox;
+    background-color: #88304E;
+    align-content: center;
+    justify-items: center;
+}
+
