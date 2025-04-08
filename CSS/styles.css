@@ -62,3 +62,13 @@ form {
     align-content: center;
     justify-items: center;
 }
+
+#community-hub {
+    background-color: #88304E;
+    color: white;
+}
+
+#cart {
+    background-color: #88304E;
+    color: white;
+}
