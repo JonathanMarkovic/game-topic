@@ -72,3 +72,10 @@ form {
     background-color: #88304E;
     color: white;
 }
+
+#purchase {
+    background-color: #491a2a;
+    justify-self: right;
+    color: white;
+    float: right;
+}
