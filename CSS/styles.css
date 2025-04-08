@@ -30,3 +30,7 @@ nav h1 {
     font-size: larger;
     color: #ffd2d7;
 }
+
+.carousel-indicators {
+    color:#88304E;
+}
