@@ -31,6 +31,10 @@ nav h1 {
     color: #ffd2d7;
 }
 
-.carousel-indicators {
-    color:#88304E;
+#contactForm {
+    color: white;
+    display: flexbox;
+    background-color: #88304E;
+    align-content: center;
+    justify-items: center;
 }
