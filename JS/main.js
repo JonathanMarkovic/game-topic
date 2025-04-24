@@ -1,4 +1,4 @@
-import { initMap } from "./Modules/map";
+import { initMap } from "./Modules/map.js";
 
 //Making sure the HTML is all loaded
 document.addEventListener('DOMContentLoaded', initApp);
@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', initApp);
 function initApp() {
     console.log("Initializing webpage");
 
+    const page = document.querySelector("[data-page]").dataset.page
+    console.log(page);
+    
+
     if (page === "map") {
         initMap();
     }
-    //Create list of games here
-    const games = [];
 
-    
-    displayGames(games);
+    // displayGames(games);
 }
 
 function displayGames(games) {
