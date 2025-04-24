@@ -1,0 +1,252 @@
+{
+    "categories": [
+        {
+            "categoryID" : 1,
+            "CategoryName" : "Action",
+            "description" : "Action packed games for an exciting gaming experience"
+        }, 
+        {
+            "categoryID" : 2,
+            "CategoryName" : "Adventure",
+            "description" : "For those looking for some adventure"
+        },
+        {
+            "categoryID" : 3,
+            "CategoryName" : "RPG",
+            "description" : "Games with roleplaying involved, often mmo type games"
+        },
+        {
+            "categoryID" : 4,
+            "CategoryName" : "Survival",
+            "description" : "For those that want to brave the 'outdoors'"
+        },
+        {
+            "categoryID" : 5,
+            "CategoryName" : "Sandbox",
+            "description" : "Games for those who want to have the freedom to do whatever they'd like"
+        }
+
+    ],
+    "products": [
+        {
+            "GameID" : 1,
+            "CategoryID" : 3,
+            "GameTitle" : "Oblivion",
+            "Description" : "Rediscover Cyrodiil Journey through the rich world of Tamriel and battle across the planes of Oblivion where handcrafted details have been meticulously recreated to ensure each moment of exploration is awe-inspiring.",
+            "Price" : 66.99,
+            "Developper" : "Bethesda Game Studios, Virtuos",
+            "Publisher" : "Bethesda Softworks",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\oblivion Thumbnail.jpg"
+        },
+        {
+            "GameID" : 2,
+            "CategoryID" : 3,
+            "GameTitle" : "Cyberpunk 2077",
+            "Description" : "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
+            "Price" : 79.99,
+            "Developper" : "CD PROJEKT RED",
+            "Publisher" : "CD PROJEKT RED",
+            "Quantity" : 10,
+            "Thumbnail" : "Images\\cyberpunk thumbnail.jpg"
+        },
+        {
+            "GameID" : 3,
+            "CategoryID" : 3,
+            "GameTitle" : "RuneScape Dragonwilds",
+            "Description" : "On RuneScape’s forgotten continent of Ashenfall, dragons have awoken. Gather, build, skill and craft to survive in this co-operative (1-4) survival crafting game. Only by mastering survival and uncovering ancient secrets can they hope to slay the Dragon Queen—alone or with allies.",
+            "Price" : 38.99,
+            "Developper" : "Jagex Ltd",
+            "Publisher" : "Jagex Ltd",
+            "Quantity" : 4,
+            "Thumbnail" : "Images\\runscapeDragonwilds.jpg"
+        },
+        {
+            "GameID" : 4,
+            "CategoryID" : 4,
+            "GameTitle" : "Once Human",
+            "Description" : "Once Human is a multiplayer open-world survival game set in a strange, post-apocalyptic future. Unite with friends to fight monstrous enemies, uncover secret plots, compete for resources, and build your own territory. Once, you were merely human. Now, you have the power to remake the world.",
+            "Price" : 0.00,
+            "Developper" : "Starry Studios",
+            "Publisher" : "Starry Studios",
+            "Quantity" : 15,
+            "Thumbnail" : "Images\\oncehuman.jpg"
+        },
+        {
+            "GameID" : 5,
+            "CategoryID" : 1,
+            "GameTitle" : "Counter Strike 2",
+            "Description" : "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.",
+            "Price" : 0.00,
+            "Developper" : "Valve",
+            "Publisher" : "Valve",
+            "Quantity" : 100,
+            "Thumbnail" : "Images\\counterstrike2.jpg"
+        },
+        {
+            "GameID" : 6,
+            "CategoryID" : 1,
+            "GameTitle" : "Dota 2",
+            "Description" : "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.",
+            "Price" : 0.00,
+            "Developper" : "Valve",
+            "Publisher" : "Valve",
+            "Quantity" : 15,
+            "Thumbnail" : "Images\\dota2"
+        },
+        {
+            "GameID" : 7,
+            "CategoryID" : 3,
+            "GameTitle" : "Path of Exile 2",
+            "Description" : "Path of Exile 2 is a next generation Action RPG from Grinding Gear Games, featuring co-op for up to six players. Set years after the original Path of Exile, you will return to the dark world of Wraeclast and seek to end the corruption that is spreading.",
+            "Price" : 41.92,
+            "Developper" : "Grinding Gear Games",
+            "Publisher" : "Grinding Gear Games",
+            "Quantity" : 7,
+            "Thumbnail" : "Images\\pathOfExile2.jpg"
+        },
+        {
+            "GameID" : 8,
+            "CategoryID" : 1,
+            "GameTitle" : "Scedule 1",
+            "Description" : "From small-time dope pusher to kingpin - manufacture and distribute a range of drugs throughout the grungy city of Hyland Point. Expand your empire with properties, businesses, employees and more.",
+            "Price" : 25.99,
+            "Developper" : "TVGS",
+            "Publisher" : "TVGS",
+            "Quantity" : 420,
+            "Thumbnail" : "Images\\schedule1.jpg"
+        },
+        {
+            "GameID" : 9,
+            "CategoryID" : 3,
+            "GameTitle" : "Throne of Liberty",
+            "Description" : "Welcome to THRONE AND LIBERTY, a free-to-play, multi-platform MMORPG. With an always changing environment, Massive Scale PvPvE, and the ability to transform into creatures to battle across land, sea, and air.",
+            "Price" : 0.00,
+            "Developper" : "NCSOFT",
+            "Publisher" : "Amazon Games",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\throneofliberty.jpg"
+        },
+        {
+            "GameID" : 10,
+            "CategoryID" : 4,
+            "GameTitle" : "Don't Starve Together",
+            "Description" : "Fight, Farm, Build and Explore Together in the standalone multiplayer expansion to the uncompromising wilderness survival game, Don't Starve.",
+            "Price" : 16.99,
+            "Developper" : "Klei Entertainment",
+            "Publisher" : "Klei Entertainment",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\dontstarvetogether.jpg"
+        },
+        {
+            "GameID" : 11,
+            "CategoryID" : 1,
+            "GameTitle" : "Dying Light 2 Stay Human",
+            "Description" : "Humanity is fighting a losing battle against the virus. Experience a post-apocalyptic open world overrun by hordes of zombies, where your parkour and combat skills are key to survival. Traverse the City freely during the day, but watch the monsters take over during the night.",
+            "Price" : 79.99,
+            "Developper" : "Techland",
+            "Publisher" : "Techland",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\dyinglight2.jpg"
+        },
+        {
+            "GameID" : 12,
+            "CategoryID" : 2,
+            "GameTitle" : "Far Cry Primal",
+            "Description" : "The award-winning Far Cry franchise returns with its innovative open world gameplay, bringing together massive beasts, breathtaking environments, and unpredictable savage encounters. Welcome to the Stone Age, a time of danger and adventure.",
+            "Price" : 39.99,
+            "Developper" : "Ubisoft",
+            "Publisher" : "Ubisoft",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\farcryprimal.jpg"
+        },
+        {
+            "GameID" : 13,
+            "CategoryID" : 2,
+            "GameTitle" : "Slime Rancher",
+            "Description" : "Slime Rancher is the tale of Beatrix LeBeau, a plucky, young rancher who sets out for a life a thousand light years away from Earth on the ‘Far, Far Range’ where she tries her hand at making a living wrangling slimes.",
+            "Price" : 25.99,
+            "Developper" : "Monogomi Park",
+            "Publisher" : "Monogomi Park",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\slimerancher.jpg"
+        },
+        {
+            "GameID" : 14,
+            "CategoryID" : 2,
+            "GameTitle" : "Styx: Shards of Darkness",
+            "Description" : "Styx returns in a new stealth adventure! Explore and master huge open environments, sneak past or assassinate new enemies and bosses, and experiment with the new array of lethal abilities and weapons in our goblin assassin's arsenal.",
+            "Price" : 25.99,
+            "Developper" : "Cyanide Studio",
+            "Publisher" : "Nacon",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\styxshardsofdarkness.jpg"
+        },
+        {
+            "GameID" : 15,
+            "CategoryID" : 2,
+            "GameTitle" : "Styx: Master of Shadows",
+            "Description" : "Styx: Master of Shadows is an infiltration game with RPG elements taking place in a dark fantasy universe, where you sneak, steal and assassinate your way through as Styx, a Goblin two-centuries of age.",
+            "Price" : 26.99,
+            "Developper" : "Cyanide Studio",
+            "Publisher" : "Cyanide Studio, Nacon",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\styxmasterofshadows.jpg"
+        },
+        {
+            "GameID" : 16,
+            "CategoryID" : 4,
+            "GameTitle" : "Subnautica",
+            "Description" : "Descend into the depths of an alien underwater world filled with wonder and peril. Craft equipment, pilot submarines and out-smart wildlife to explore lush coral reefs, volcanoes, cave systems, and more - all while trying to survive.",
+            "Price" : 39.99,
+            "Developper" : "Unknown Worlds Entertainment",
+            "Publisher" : "Unknown Worlds Entertainment",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\subnautica.jpg"
+        },
+        {
+            "GameID" : 17,
+            "CategoryID" : 4,
+            "GameTitle" : "Subnautica: Below Zero",
+            "Description" : "Dive into a freezing underwater adventure on an alien planet. Below Zero is set two years after the original Subnautica. Return to Planet 4546B to uncover the truth behind a deadly cover-up. Survive by building habitats, crafting tools, & diving deeper into the world of Subnautica.",
+            "Price" : 39.99,
+            "Developper" : "Unknown Worlds Entertainment",
+            "Publisher" : "Unknown Worlds Entertainment",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\subnauticabelowzero.jpg"
+        },
+        {
+            "GameID" : 18,
+            "CategoryID" : 3,
+            "GameTitle" : "Vampyr",
+            "Description" : "London, 1918. You are newly-turned Vampyr Dr. Jonathan Reid. As a doctor, you must find a cure to save the city’s flu-ravaged citizens. As a Vampyr, you are cursed to feed on those you vowed to heal.",
+            "Price" : 54.99,
+            "Developper" : "DONTNOT Entertainment",
+            "Publisher" : "Focus Entertainment",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\vampyr.jpg"
+        },
+        {
+            "GameID" : 19,
+            "CategoryID" : 3,
+            "GameTitle" : "Warframe",
+            "Description" : "Awaken as an unstoppable warrior and battle alongside your friends in this story-driven free-to-play online action game",
+            "Price" : 0.00,
+            "Developper" : "Digital Extremes",
+            "Publisher" : "Digital Extremes",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\\warframe.jpg"
+        },
+        {
+            "GameID" : 20,
+            "CategoryID" : 2,
+            "GameTitle" : "SnowRunner",
+            "Description" : "Get ready for the next-generation off-road experience! Drive powerful vehicles and overcome extreme open environments to complete dozens of challenging missions solo or with up to 3 friends!",
+            "Price" : 39.99,
+            "Developper" : "Saber Interactive",
+            "Publisher" : "Focus Entertainment",
+            "Quantity" : 5,
+            "Thumbnail" : "Images\blivion Thumbnail.jpg"
+        }
+    ]
+}
