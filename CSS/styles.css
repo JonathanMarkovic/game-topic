@@ -1,6 +1,16 @@
-html[data-theme="default"]  {
-    background-color: #88304E;
-}
+:root {
+    /* Color Palette */
+    --nav-color: #F7374F;
+    --primary-color: #88304E;
+    --dark-accent: #522546;
+    --darker-accent: #2C2C2C;
+    
+  }
+  
+  /* Theme Styles */
+  html[data-theme="default"] {
+    background-color: var(--primary-color);
+  }
 
 nav ul li {
     display: inline-block;
