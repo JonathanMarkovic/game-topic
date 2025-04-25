@@ -9,26 +9,24 @@
   
   /* Theme Styles */
   html[data-theme="default"] {
-    background-color: var(--primary-color);
+    background-color: var(--dark-accent);
   }
 
 nav ul li {
     display: inline-block;
     padding: 10px;
-    border-style: solid;
-    border-color: #88304E;
-    border-radius: 35%;
     
 }
 
 nav ul li a{
-    color: #57152b;
+    color: var(--darker-accent);
     text-decoration: none;
 }
 
+
 nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #F7374F;
+    background-color: var(--nav-color);
     padding: 5px;
 }
 
@@ -37,9 +35,18 @@ nav h1 a {
     text-decoration: none;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
 #currentPage {
     font-size: larger;
-    color: #ffd2d7;
+    color: white;
+    text-decoration: underline;
+
 }
 
 #map {
@@ -79,10 +86,14 @@ nav h1 a {
 
 form {
     color: white;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     background-color: #88304E;
-    align-content: center;
-    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 400px;
 }
 
 #community-hub {
@@ -100,4 +111,15 @@ form {
     justify-self: right;
     color: white;
     float: right;
+}
+
+#carouselExampleIndicators {
+    background-color: var(--primary-color);
+}
+
+
+
+body {
+    background-color: var(--primary-color);
+    color: white;
 }
