@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp() {
   console.log("Initializing the app...");
-  const btn = document.querySelector('#btn-fetch-products');
-  btn.addEventListener('click', fetchProducts);
+  fetchProducts();
 }
 
 async function fetchProducts() {
