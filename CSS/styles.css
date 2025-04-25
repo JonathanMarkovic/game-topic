@@ -32,8 +32,9 @@ nav {
     padding: 5px;
 }
 
-nav h1 {
+nav h1 a {
     color: white;
+    text-decoration: none;
 }
 
 #currentPage {
