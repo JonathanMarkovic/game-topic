@@ -138,3 +138,14 @@ body {
   background-position: center;
   color: white;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--darker-accent);
+    color: white;
+}
+
+footer i {
+    padding: 20px;
+}
