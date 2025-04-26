@@ -93,7 +93,7 @@ form {
     color: white;
     display: flex;
     flex-direction: column;
-    background-color: #88304E;
+    background-color: #6d5b61;
     align-items: center;
     border: 2px solid black;
     margin: 0 auto;
@@ -129,4 +129,12 @@ form {
 body {
     background-color: var(--primary-color);
     color: white;
+}
+
+.backImg {
+    background-image: url('/images/Background_Image.jpg');
+  background-size: cover;      /* scales the image to cover the entire background */
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
 }
