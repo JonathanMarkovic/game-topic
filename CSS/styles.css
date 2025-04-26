@@ -51,6 +51,11 @@ main {
 
 #map {
     height: 750px;
+    align-items: center;
+    margin: 30px;
+    padding: 40px;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 #mapContainer {
@@ -117,7 +122,9 @@ form {
     background-color: var(--primary-color);
 }
 
-
+#mapContainer {
+    background-color: var(--primary-color);
+}
 
 body {
     background-color: var(--primary-color);
