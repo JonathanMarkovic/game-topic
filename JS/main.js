@@ -1,4 +1,5 @@
 import { initMap } from "./Modules/map.js";
+import { initCart } from "./Modules/cart.js";
 
 //Making sure the HTML is all loaded
 document.addEventListener('DOMContentLoaded', initApp);
@@ -12,6 +13,8 @@ function initApp() {
 
     if (page === "map") {
         initMap();
+    } else if (page === "cart") {
+        initCart();
     }
 
     // displayGames(games);
