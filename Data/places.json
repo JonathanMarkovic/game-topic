@@ -114,20 +114,11 @@
             "categoryId":2
         },
         {
-            "id":11,
+            "id":12,
             "name":"Planète Otaku",
             "description":"Hobby Store",
             "point": {
                 "coordinates":"45.539090540836796, -73.60037328980768"
-            },
-            "categoryId":2
-        },
-        {
-            "id":12,
-            "name":"Souvenirs - Galerie du Souvenirs - Pokemon Collectables - Joke T-Shirts - Hoodies",
-            "description":"Gift Shop",
-            "point": {
-                "coordinates":"45.513113678242334, -73.55329515965063"
             },
             "categoryId":2
         },
@@ -142,6 +133,15 @@
         },
         {
             "id":14,
+            "name":"Souvenirs - Galerie du Souvenirs - Pokemon Collectables - Joke T-Shirts - Hoodies",
+            "description":"Gift Shop",
+            "point": {
+                "coordinates":"45.513113678242334, -73.55329515965063"
+            },
+            "categoryId":2
+        },
+        {
+            "id":15,
             "name":"Three Kings Loot inc",
             "description":"Game Store",
             "point": {
@@ -150,7 +150,7 @@
             "categoryId":2
         },
         {
-            "id":15,
+            "id":16,
             "name":"Collector's Avenue",
             "description":"Trading Card Store",
             "point": {
@@ -159,7 +159,7 @@
             "categoryId":2
         },
         {
-            "id":16,
+            "id":17,
             "name":"Enchanted Cards and Collectibles",
             "description":"Trading Card Store",
             "point": {
@@ -168,7 +168,7 @@
             "categoryId":2
         },
         {
-            "id":17,
+            "id":18,
             "name":"Kayys Collection",
             "description":"Collectibles Store",
             "point": {
@@ -177,7 +177,7 @@
             "categoryId":2
         },
         {
-            "id":18,
+            "id":19,
             "name":"Cmd Store",
             "description":"Toy Store",
             "point": {
@@ -186,7 +186,7 @@
             "categoryId":2
         },
         {
-            "id":19,
+            "id":20,
             "name":"Boutique Imaginaire de Pointe-Claire",
             "description":"Game Store",
             "point": {
@@ -195,7 +195,7 @@
             "categoryId":2
         },
         {
-            "id":19,
+            "id":21,
             "name":"Bluenose Collectibles",
             "description":"Collectibles Store",
             "point": {
