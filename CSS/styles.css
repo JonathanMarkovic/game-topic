@@ -64,6 +64,10 @@ main {
     gap: 5px;
 }
 
+table {
+    background-color: var(--dark-accent);
+}
+
 /* 
 #contactForm {
     color: white;
