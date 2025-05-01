@@ -1,0 +1,207 @@
+{
+    "categories":[
+        {
+            "id":1,
+            "name":"Game Store",
+            "Description":"Stores selling games for a variety of consoles",
+            "markerIcon":"Icons\\controller.svg"
+        },
+        {
+            "id":2,
+            "name":"Collectables Store",
+            "Description":"Stores selling collectables from various games",
+            "markerIcon":"Icons\\shop.svg"
+        }
+    ],
+    "places":[
+        {
+            "id":1,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.61184599735707, -73.61054422106723"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":2,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.608003311085604, -73.56591226141113"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":3,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.59866568892416, -73.53737355819005"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":4,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.546063766713566, -73.61303331889368"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":5,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.51046721281019, -73.57183458240259"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":6,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.50075241783686, -73.6530733257493"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":7,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.454712187849495, -73.61698152282968"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":8,
+            "name":"Game Stop",
+            "description":"Store that sells Games and collectables",
+            "point": {
+                "coordinates":"45.468588399746345, -73.83130076000656"
+            },
+            "categoryId": 1
+        },
+        {
+            "id":9,
+            "name":"MG Comics",
+            "description":"Comic Books Store",
+            "point": {
+                "coordinates":"45.58678352335599, -73.6337672966341"
+            },
+            "categoryId":2
+        },
+        {
+            "id":10,
+            "name":"1000000 Comix",
+            "description":"Colourful retailer featuring a sizable assortment of comic books, toys & other products.",
+            "point": {
+                "coordinates":"45.573807610471704, -73.59050863363564"
+            },
+            "categoryId":2
+        },
+        {
+            "id":11,
+            "name":"Toy Snowman",
+            "description":"Toy Store",
+            "point": {
+                "coordinates":"45.53289807251403, -73.55638506069566"
+            },
+            "categoryId":2
+        },
+        {
+            "id":11,
+            "name":"Planète Otaku",
+            "description":"Hobby Store",
+            "point": {
+                "coordinates":"45.539090540836796, -73.60037328980768"
+            },
+            "categoryId":2
+        },
+        {
+            "id":12,
+            "name":"Souvenirs - Galerie du Souvenirs - Pokemon Collectables - Joke T-Shirts - Hoodies",
+            "description":"Gift Shop",
+            "point": {
+                "coordinates":"45.513113678242334, -73.55329515965063"
+            },
+            "categoryId":2
+        },
+        {
+            "id":13,
+            "name":"Souvenirs - Galerie du Souvenirs - Pokemon Collectables - Joke T-Shirts - Hoodies",
+            "description":"Gift Shop",
+            "point": {
+                "coordinates":"45.513113678242334, -73.55329515965063"
+            },
+            "categoryId":2
+        },
+        {
+            "id":14,
+            "name":"Three Kings Loot inc",
+            "description":"Game Store",
+            "point": {
+                "coordinates":"45.4774962723009, -73.60960008761442"
+            },
+            "categoryId":2
+        },
+        {
+            "id":15,
+            "name":"Collector's Avenue",
+            "description":"Trading Card Store",
+            "point": {
+                "coordinates":"45.4833939520649, -73.62916948851745"
+            },
+            "categoryId":2
+        },
+        {
+            "id":16,
+            "name":"Enchanted Cards and Collectibles",
+            "description":"Trading Card Store",
+            "point": {
+                "coordinates":"45.497353347450776, -73.64084246107258"
+            },
+            "categoryId":2
+        },
+        {
+            "id":17,
+            "name":"Kayys Collection",
+            "description":"Collectibles Store",
+            "point": {
+                "coordinates":"45.50198565822766, -73.70564463182326"
+            },
+            "categoryId":2
+        },
+        {
+            "id":18,
+            "name":"Cmd Store",
+            "description":"Toy Store",
+            "point": {
+                "coordinates":"45.489471528157196, -73.69671824104582"
+            },
+            "categoryId":2
+        },
+        {
+            "id":19,
+            "name":"Boutique Imaginaire de Pointe-Claire",
+            "description":"Game Store",
+            "point": {
+                "coordinates":"45.46732433093465, -73.82868292400799"
+            },
+            "categoryId":2
+        },
+        {
+            "id":19,
+            "name":"Bluenose Collectibles",
+            "description":"Collectibles Store",
+            "point": {
+                "coordinates":"45.45317686539578, -73.81211760119547"
+            },
+            "categoryId":2
+        }
+    ]
+}
