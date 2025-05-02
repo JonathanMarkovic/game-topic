@@ -22,10 +22,10 @@ function loadMap(data) {
       categoriesMap[category.id] = category.name;
     });
 
+    console.log("Placing Markers");
     data.places.forEach(place => {
       var coords = place.point.coordinates.split(',');
         var x = parseFloat(coords[0]);
-        console.log(x);
         var y = parseFloat(coords[1]);
         var marker = L.marker([x,y]).addTo(map);
         var placeInfo = `<h5>${place.name}</h5>
@@ -49,6 +49,7 @@ async function loadPlaces() {
 }
   
 function displayPlaces(data) {
+    console.log("Displaying Places");
     const locationsList = document.getElementById("locations");
     // Create a map of categories for easy lookup
     const categoriesMap = {};
