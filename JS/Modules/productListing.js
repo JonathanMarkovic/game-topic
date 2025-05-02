@@ -3,7 +3,7 @@ import { fetchData } from "./fetchDataWrapper.js";
 document.addEventListener('DOMContentLoaded', initProducts);
 
 export function initProducts() {
-  console.log("Initializing the app...");
+  console.log("Initializing the product listing page...");
   fetchProducts();
 }
 

@@ -4,13 +4,13 @@
             "id":1,
             "name":"Game Store",
             "Description":"Stores selling games for a variety of consoles",
-            "markerIcon":"Icons\\controller.svg"
+            "markerIcon":"Icons\\videogames.png"
         },
         {
             "id":2,
             "name":"Collectables Store",
             "Description":"Stores selling collectables from various games",
-            "markerIcon":"Icons\\shop.svg"
+            "markerIcon":"Icons\\mall.png"
         }
     ],
     "places":[
