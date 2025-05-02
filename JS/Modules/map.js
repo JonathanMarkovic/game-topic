@@ -27,10 +27,27 @@ function loadMap(data) {
       var coords = place.point.coordinates.split(',');
         var x = parseFloat(coords[0]);
         var y = parseFloat(coords[1]);
-        var marker = L.marker([x,y]).addTo(map);
+        var category = categoriesMap[place.categoryId];
+        
+        
+        // Link for doing the custom icons
+        // https://leafletjs.com/examples/custom-icons/
+        // var icon = L.icon({iconUrl: data.categories[place.categoryId].markerIcon});
+
+        // 5) adding the custom marker for the map
+        // For the current place, we need to find the matching category (search by ID in the categories array)
+        const currentCategory = data.categories[place.categoryId - 1];
+        const uri = currentCategory.markerIcon;
+        console.log(uri);
+
+        const customIcon = L.icon({
+          iconUrl: uri
+        })
+
+        var marker = L.marker([x,y], {icon: customIcon}).addTo(map);
         var placeInfo = `<h5>${place.name}</h5>
                          <p>${place.description}</p>
-                         <p>${categoriesMap[place.categoryId]}</p>`
+                         <p>${category}</p>`
         marker.bindPopup(placeInfo)
       });
 }
@@ -68,9 +85,12 @@ function displayPlaces(data) {
         const location = document.createElement('li');
         location.innerHTML = `<P>Name: ${name}<br>`;
 
-        
+        var coords = place.point.coordinates.split(',');
+        var x = parseFloat(coords[0]);
+        var y = parseFloat(coords[1]);
         
         location.addEventListener('click', () => {
+
         });
         locationsList.appendChild(location);
 
