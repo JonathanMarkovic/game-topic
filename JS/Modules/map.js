@@ -83,6 +83,7 @@ function displayPlaces(data) {
         // console.log(description);
         const categoryName = categoriesMap[id]
         const location = document.createElement('li');
+        location.setAttribute("class" , "list-group-item list-group-item-action");
         location.innerHTML = `<P>Name: ${name}<br>`;
 
         var coords = place.point.coordinates.split(',');
