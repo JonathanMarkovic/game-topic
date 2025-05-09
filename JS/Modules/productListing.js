@@ -2,9 +2,9 @@ import { fetchData } from "./fetchDataWrapper.js";
 
 document.addEventListener('DOMContentLoaded', initProducts);
 
-export function initProducts() {
+export async function initProducts() {
   console.log("Initializing the product listing page...");
-  fetchProducts();
+  await fetchProducts();
 }
 
 async function fetchProducts() {
@@ -57,7 +57,21 @@ function displayProducts(data) {
     
     // Product Name
     const nameTd = document.createElement('td');
-    nameTd.textContent = product.GameTitle;
+    const nameLink = document.createElement('span'); // Could be a <button> or <a> instead
+    nameLink.textContent = product.GameTitle;
+    nameLink.style.textDecoration = 'underline';
+    nameLink.style.cursor = 'pointer';
+
+    // Set custom attribute (not required here, but preserved for example)
+    nameLink.dataset.showId = product.ProductID;
+
+    // Click event to store in localStorage and redirect
+    nameLink.addEventListener('click', (ev) => {
+      localStorage.setItem("show-id", JSON.stringify(product)); // Save whole object
+      window.location = "details.html"; // Redirect to details page
+    });
+
+    nameTd.appendChild(nameLink);
     tr.appendChild(nameTd);
     
     // Price
