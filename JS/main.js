@@ -15,10 +15,14 @@ function initApp() {
     
 
     if (page === "map") {
+        console.log("initializing map");
+        
         initMap();
     } else if (page === "cart") {
+        console.log("initializing cart page");
         initCart();
     } else if (page === "products") {
+        console.log("initializing products");
         initProducts();
     } else if (page === "labMap") {
         initMapView();
