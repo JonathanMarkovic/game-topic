@@ -59,12 +59,19 @@ function loadCart() {
   }
 
   console.log(cart);
-
+  cartList.innerHTML = ``;
   //creating an element for each cart item in the list
-  cart.forEach(item => {
-    // const img = item.Thumbnail;
-    const Title = item.GameTitle;
-    const price = item.Price;
+  cart.forEach(cartGame => {
+    // const img = item.Thumbnail;\
+    console.log(cartGame);
+    cartGame = JSON.parse(cartGame);
+    console.log(cartGame);
+    
+    const Title = cartGame.GameTitle;
+    console.log(Title);
+    
+    const Price = cartGame.Price;
+    console.log(Price);
 
     const cartItem = document.createElement('li');
     // const button = document.createElement('button');
@@ -73,27 +80,22 @@ function loadCart() {
     titleDiv.innerText = Title;
 
     const priceDiv = document.createElement('div');
-    priceDiv.innerText = price;
+    priceDiv.innerText = Price;
 
     const button = document.createElement('button');
     button.textContent = "Remove";
 
     button.addEventListener('click', () => {
-      const index = cart.indexOf(item);
-
-      if (index !== -1) {
-
-        
-        cart.splice(index, 1);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        loadCart();
-      }
+      const index = cart.indexOf(cartGame);
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      loadCart();
     })
 
     cartItem.appendChild(titleDiv);
     cartItem.appendChild(priceDiv);
     cartItem.appendChild(button);
-
+    
     cartList.appendChild(cartItem);
   })
 }
