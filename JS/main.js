@@ -2,6 +2,7 @@ import { initMap } from "./Modules/map.js";
 import { initCart } from "./Modules/cart.js";
 import { initProducts } from "./Modules/productListing.js";
 import { initMapView } from "./Modules/labMap.js";
+import { fetchData } from "./Modules/fetchDataWrapper.js";
 
 //Making sure the HTML is all loaded
 document.addEventListener('DOMContentLoaded', initApp);
@@ -51,3 +52,45 @@ class Game {
         return `${title}, ${genre}, ${price}, ${rating}`;
     }
 }
+
+//Carousel in index.html
+
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("Data/catalog.json");
+    if (!response.ok){
+        throw new Error("Failed to load catalog");
+    } 
+    const data = await response.json();
+
+    const products = data.products.slice(0, 3); // Load only first 3 games
+    const carouselInner = document.getElementById("carouselInner");
+
+    products.forEach((product, index) => {
+      const item = document.createElement("div");
+      item.classList.add("carousel-item");
+      if (index === 0){ 
+        item.classList.add("active");
+      }
+
+      const link = document.createElement("a");
+      link.href = "details.html";
+      link.addEventListener("click", () => {
+        localStorage.setItem("show-id", JSON.stringify(product));
+      });
+
+      const img = document.createElement("img");
+      img.src = product.Thumbnail;
+      img.className = "d-block w-100";
+      img.alt = product.GameTitle;
+      img.style.maxHeight = "500px";
+      img.style.objectFit = "cover";
+
+      link.appendChild(img);
+      item.appendChild(link);
+      carouselInner.appendChild(item);
+    });
+  } catch (err) {
+    console.error("Error loading carousel data:", err);
+  }
+});
