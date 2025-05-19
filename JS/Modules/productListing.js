@@ -1,10 +1,9 @@
 import { fetchData } from "./fetchDataWrapper.js";
 
-document.addEventListener('DOMContentLoaded', initProducts);
-
 export async function initProducts() {
   console.log("Initializing the product listing page...");
   await fetchProducts();
+  document.getElementById("searchInput").addEventListener("input", searchTable);
 }
 
 async function fetchProducts() {
@@ -62,7 +61,7 @@ function displayProducts(data) {
     nameLink.style.textDecoration = 'underline';
     nameLink.style.cursor = 'pointer';
 
-    // Set custom attribute (not required here, but preserved for example)
+    // Set custom attribute
     nameLink.dataset.showId = product.ProductID;
 
     // Click event to store in localStorage and redirect
@@ -91,4 +90,26 @@ function displayProducts(data) {
     
     tblProducts.appendChild(tr);
   });
+}
+
+function searchTable() {
+    console.log("searchTable running");
+    const filter = document.getElementById('searchInput').value.toLowerCase();
+    const table = document.getElementById('tbl-products');
+    const rows = table.getElementsByTagName('tr');
+
+    for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName('td');
+        if (cells.length > 0) {
+            const category = cells[0].textContent.toLowerCase();
+            const name = cells[1].textContent.toLowerCase();
+
+            // Show row if filter matches either category or name
+            if (category.includes(filter) || name.includes(filter)) {
+                rows[i].style.display = '';
+            } else {
+                rows[i].style.display = 'none';
+            }
+        }
+    }
 }
