@@ -3,7 +3,7 @@ import { initCart } from "./Modules/cart.js";
 import { initProducts } from "./Modules/productListing.js";
 import { initMapView } from "./Modules/labMap.js";
 import { fetchData } from "./Modules/fetchDataWrapper.js";
-import { initDetailsPage } from "./Modules/details.js";
+// import { initDetailsPage } from "./Modules/details.js";
 
 //Making sure the HTML is all loaded
 document.addEventListener('DOMContentLoaded', initApp);
