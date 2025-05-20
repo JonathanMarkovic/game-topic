@@ -176,3 +176,8 @@ footer {
 footer i {
     padding: 20px;
 }
+
+#container {
+    background-color: var(--dark-accent);
+    color: white;
+}
