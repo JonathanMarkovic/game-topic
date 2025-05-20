@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", initDetailsPage);
-
-export function initDetailsPage() {
+export async function initDetailsPage() {
     console.log("content initialized");
     // get id from local storage API
     const id = JSON.parse(localStorage.getItem("show-id"));
