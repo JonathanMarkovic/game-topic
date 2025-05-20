@@ -1,6 +1,9 @@
 # game-topic
 Game sales website for Internet Programming class
 
+# links
+- Repository: https://github.com/JonathanMarkovic/game-topic.git 
+- Github Pages Website: https://jonathanmarkovic.github.io/game-topic/ 
 
 This website has multiple pages, each serving their own purpose.
 

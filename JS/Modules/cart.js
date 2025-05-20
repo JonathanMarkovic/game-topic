@@ -45,6 +45,15 @@
 
 export function initCart() {
   loadCart();
+
+  const purchaseBtn = document.getElementById("purchaseBtn");
+
+  purchaseBtn.addEventListener('click', () => {
+    localStorage.setItem('cart', JSON.stringify([]));
+
+    alert(`Products purchased`);
+    loadCart();
+  })
 }
 
 function loadCart() {
