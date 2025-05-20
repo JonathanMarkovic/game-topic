@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       img.src = product.Thumbnail;
       img.className = "d-block w-100";
       img.alt = product.GameTitle;
-      img.style.maxHeight = "500px";
+      img.style.maxHeight = "800px";
       img.style.objectFit = "cover";
 
       link.appendChild(img);
@@ -101,3 +101,65 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Error loading carousel data:", err);
   }
 });
+
+//freetogame API table (Nicolas)
+
+document.addEventListener("DOMContentLoaded", () => {
+  const categorySelect = document.getElementById("categorySelect");
+  const gamesTableBody = document.querySelector("#gamesTable tbody");
+  const gamesContainer = document.getElementById("gamesContainer");
+  const showGamesBtn = document.getElementById("showGamesBtn");
+
+  function fetchGames(category = "") {
+    let url = "https://free-to-play-games-database.p.rapidapi.com/api/games";
+    if (category) {
+      url += `?category=${encodeURIComponent(category)}`;
+    }
+
+    //Using fetch() for HTTP Get request to API
+    fetch(url, {
+      //RapidAPI headers
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
+        "x-rapidapi-key": "1b4ad3e367mshd7fe57842d61e43p1220fcjsn49a2b8876e63"
+      }
+    })
+      .then((response) => response.json())
+      .then((games) => {
+        displayGames(games);
+      })
+      .catch((error) => {
+        console.error("Error fetching games:", error);
+      });
+  }
+
+  function displayGames(games) {
+    gamesTableBody.innerHTML = "";
+
+    games.forEach((game) => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td><a href="${game.game_url}" target="_blank">${game.title}</a></td>
+        <td>${game.genre}</td>
+        <td>${game.platform}</td>
+        <td>${game.publisher}</td>
+        <td>${game.release_date}</td>
+      `;
+
+      gamesTableBody.appendChild(row);
+    });
+  }
+ // Show the game list when button is clicked
+  showGamesBtn.addEventListener("click", () => {
+    gamesContainer.style.display = "block"; // Show the table
+    fetchGames(); // Fetch games immediately when revealed
+  });
+
+  // Filter by category on selection
+  categorySelect.addEventListener("change", () => {
+    fetchGames(categorySelect.value);
+  });
+});
+
