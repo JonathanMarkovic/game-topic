@@ -32,6 +32,7 @@ function initApp() {
     }
 
     // displayGames(games);
+    loadSteamGames();
 }
 
 function displayGames(games) {
@@ -162,4 +163,46 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchGames(categorySelect.value);
   });
 });
+
+// Jonathan's API loading
+
+function loadSteamGames() {
+  // get basic information for operations
+  const url = "https://mhw-db.com/monsters";
+  const displayGameBtn = document.getElementById('displayBtn');
+  const monsterTable = document.getElementById("monsterHunter");
+
+  // Add an event for the button
+  displayGameBtn.addEventListener('click', async () => {
+    const fetched = await fetchData(url);
+    console.log(fetched);
+    
+    const monsters = fetched.applist.apps;
+    console.log("Fetched monsters: ", monsters);
+    
+    monsters.forEach(monster => {
+      // Create the row for the data
+      const row = document.createElement('tr');
+
+      const sizeTD = document.createElement('td');
+      sizeTD.textContent = monster.type;
+
+      const speciesTD = document.createElement('td');
+      speciesTD.textContent = monster.species;
+
+      const elementsTD = document.createElement('td');
+      elementsTD.textContent = monster.elements;
+
+      const nameTD = document.createElement('td');
+      nameTD.textContent = monster.name;
+
+      row.appendChild(sizeTD);
+      row.appendChild(speciesTD);
+      row.appendChild(elementsTD);
+      row.appendChild(nameTD);
+
+      monsterTable.appendChild(row);
+    });
+  })
+}
 
