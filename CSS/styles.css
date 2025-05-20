@@ -1,16 +1,62 @@
 :root {
-    /* Color Palette */
-    --nav-color: #F7374F;
-    --primary-color: #88304E;
-    --dark-accent: #522546;
-    --darker-accent: #2C2C2C;
-    
-  }
+  /* Dark Theme Colors */
+  --nav-dark-color: #F7374F;
+  --primary-dark-color: #88304E;
+  --dark-accent: #522546;
+  --darker-accent: #2C2C2C;
+  --text-dark-color: #FFFFFF;
   
-  /* Theme Styles */
-  html[data-theme="default"] {
-    background-color: var(--dark-accent);
-  }
+  /* Light Theme Colors */
+  --nav-light-color: #fd5165;
+  --primary-light-color: #d86189;
+  --light-accent: #e475b2;
+  --lighter-accent: #a5949b;
+  --text-light-color: #212529;
+
+  /* Default to dark theme */
+  --nav-color: var(--nav-dark-color);
+  --primary-color: var(--primary-dark-color);
+  --bg-accent: var(--dark-accent);
+  --darker-bg: var(--darker-accent);
+  --text-color: var(--text-dark-color);
+}
+
+/* Light Theme */
+html[data-theme="light"] {
+  --nav-color: var(--nav-light-color);
+  --primary-color: var(--primary-light-color);
+  --bg-accent: var(--light-accent);
+  --darker-bg: var(--lighter-accent);
+  --text-color: var(--text-light-color);
+}
+
+html[data-theme="light"] nav ul li a {
+  color: var(--text-light-color);
+}
+
+/* Dark Theme */
+html[data-theme="dark"] {
+  --nav-color: var(--nav-dark-color);
+  --primary-color: var(--primary-dark-color);
+  --bg-accent: var(--dark-accent);
+  --darker-bg: var(--darker-accent);
+  --text-color: var(--text-dark-color);
+}
+
+html[data-theme="dark"] nav ul li a {
+  color: var(--text-dark-color);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+main {
+  flex: 1;
+}
 
 nav ul li {
     display: inline-block;
@@ -19,8 +65,8 @@ nav ul li {
 }
 
 nav ul li a{
-    color: var(--darker-accent);
     text-decoration: none;
+    color: var(--bg-accent);
 }
 
 
@@ -31,7 +77,7 @@ nav {
 }
 
 nav h1 a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -75,7 +121,8 @@ main {
 }
 
 .list-group-item{
-    background-color: #bb2b3c;
+    background-color: var(--bg-accent);
+    color: var(--text-color);
 }
 
 .list-group:hover{
@@ -87,40 +134,11 @@ main {
     width: 100%;
 }
 
-/* table {
-    background-color: var(--dark-accent);
-} */
-
-/* 
-#contactForm {
-    color: white;
-    display: flexbox;
-    background-color: #88304E;
-    align-content: center;
-    justify-items: center;
-}
-
-#signUpForm {
-    color: white;
-    display: flexbox;
-    background-color: #88304E;
-    align-content: center;
-    justify-items: center;
-}
-
-#signUpForm {
-    color: white;
-    display: flexbox;
-    background-color: #88304E;
-    align-content: center;
-    justify-items: center;
-} */
-
 form {
     color: white;
     display: flex;
     flex-direction: column;
-    background-color: #6d5b61;
+    background-color: var(--bg-accent);
     align-items: center;
     border: 2px solid black;
     margin: 0 auto;
@@ -154,8 +172,11 @@ form {
 }
 
 body {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .backImg {
@@ -169,8 +190,8 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: var(--darker-accent);
-    color: white;
+    background-color: var(--darker-bg);
+    color: var(--text-color);
 }
 
 footer i {
@@ -178,6 +199,13 @@ footer i {
 }
 
 #container {
-    background-color: var(--dark-accent);
-    color: white;
+    background-color: var(--bg-accent);
+    color: var(--text-color);
+}
+
+#cartPage {
+    display: block;
+    padding: 40px;
+    min-height: 100vh;
+    background-color: var(--primary-color);
 }
