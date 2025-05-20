@@ -170,7 +170,7 @@ function loadSteamGames() {
   // get basic information for operations
   const url = "https://mhw-db.com/monsters";
   const displayGameBtn = document.getElementById('displayBtn');
-  const monsterTable = document.getElementById("monsterHunter");
+  const monsterTable = document.getElementById("monsterTableBody");
 
   // Add an event for the button
   displayGameBtn.addEventListener('click', async () => {
