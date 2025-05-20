@@ -64,7 +64,7 @@ function loadCart() {
   cart.forEach(cartGame => {
     // const img = item.Thumbnail;\
     console.log(cartGame);
-    cartGame = JSON.parse(cartGame);
+    // cartGame = JSON.parse(cartGame);
     console.log(cartGame);
     
     const Title = cartGame.GameTitle;

@@ -42,7 +42,7 @@ export async function initDetailsPage() {
             cart = [];
         }
 
-        cart.push(JSON.stringify(id));
+        cart.push(id);
         localStorage.setItem('cart', JSON.stringify(cart));
 
         console.log(cart);
