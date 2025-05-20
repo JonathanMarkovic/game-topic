@@ -87,11 +87,36 @@ function displayProducts(data) {
     img.alt = product.GameTitle;
     imgTd.appendChild(img);
     tr.appendChild(imgTd);
+
+    // Add to Cart Button
+    const cartTd = document.createElement('td');
+    const addCartBtn = document.createElement('button');
+    addCartBtn.innerHTML = '<i class="bi bi-cart-plus"></i>';
+    addCartBtn.className = 'btn btn-primary btn-sm';
+    
+    addCartBtn.addEventListener('click', () => {
+      let cart = localStorage.getItem('cart');
+      cart = JSON.parse(cart);
+
+      if (cart === null || cart === undefined) {
+        cart = [];
+      }
+
+      cart.push(product);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      console.log(cart);
+      alert(`${product.GameTitle} added to cart!`);
+    });
+    
+    cartTd.appendChild(addCartBtn);
+    tr.appendChild(cartTd);
     
     tblProducts.appendChild(tr);
   });
 }
 
+//search bar function
 function searchTable() {
     console.log("searchTable running");
     const filter = document.getElementById('searchInput').value.toLowerCase();
