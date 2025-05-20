@@ -174,10 +174,8 @@ function loadSteamGames() {
 
   // Add an event for the button
   displayGameBtn.addEventListener('click', async () => {
-    const fetched = await fetchData(url);
-    console.log(fetched);
+    const monsters = await fetchData(url);
     
-    const monsters = fetched.applist.apps;
     console.log("Fetched monsters: ", monsters);
     
     monsters.forEach(monster => {
